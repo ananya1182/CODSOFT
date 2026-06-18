@@ -2,57 +2,26 @@
 using namespace std;
 
 int main() {
-    int choice;
     double a, b;
+    char op;
 
-    do {
-        cout << "\n===== ADVANCED CALCULATOR =====\n";
-        cout << "1. Addition\n";
-        cout << "2. Subtraction\n";
-        cout << "3. Multiplication\n";
-        cout << "4. Division\n";
-        cout << "5. Exit\n";
+    cout << "Enter first number: ";
+    cin >> a;
 
-        cout << "Enter your choice: ";
-        cin >> choice;
+    cout << "Enter second number: ";
+    cin >> b;
 
-        if (choice >= 1 && choice <= 4) {
-            cout << "Enter first number: ";
-            cin >> a;
+    cout << "Enter operator (+, -, *, /): ";
+    cin >> op;
 
-            cout << "Enter second number: ";
-            cin >> b;
-        }
-
-        switch (choice) {
-            case 1:
-                cout << "Result: " << a + b << endl;
-                break;
-
-            case 2:
-                cout << "Result: " << a - b << endl;
-                break;
-
-            case 3:
-                cout << "Result: " << a * b << endl;
-                break;
-
-            case 4:
-                if (b != 0)
-                    cout << "Result: " << a / b << endl;
-                else
-                    cout << "Error: Cannot divide by zero!" << endl;
-                break;
-
-            case 5:
-                cout << "Exiting calculator... Goodbye!" << endl;
-                break;
-
-            default:
-                cout << "Invalid choice! Try again." << endl;
-        }
-
-    } while (choice != 5);
+    if(op == '+') cout << a + b;
+    else if(op == '-') cout << a - b;
+    else if(op == '*') cout << a * b;
+    else if(op == '/') {
+        if(b != 0) cout << a / b;
+        else cout << "Cannot divide by zero";
+    }
+    else cout << "Invalid operator";
 
     return 0;
 }
