@@ -43,6 +43,38 @@ A menu-driven to-do list application that lets users add, view, complete, and re
 
 C++17 · File Handling · STL (vectors, structs) · Modular Programming
 
+## 📚 Task 3 - Library Management System
+
+### 📌 Description
+A console-based Library Management System developed using C++. This project helps manage library operations through a menu-driven interface.
+
+### ✨ Features
+- Add New Books
+- Display All Books
+- Search Book by ID
+- Issue Book
+- Return Book
+- User-friendly Menu Interface
+
+### 🛠️ Technologies Used
+- C++
+- Object-Oriented Programming (OOP)
+- STL Vector
+- Functions
+- Conditional Statements & Loops
+
+### 📂 Project Folder
+```
+LibraryManagementSystem/
+└── main.cpp
+```
+
+### 🚀 Learning Outcomes
+- Implemented Classes and Objects
+- Managed data using STL Vector
+- Built a menu-driven console application
+- Strengthened understanding of Object-Oriented Programming
+
 ## About
 
 I'm Ananya, a third-year Electronics & Communication Engineering student, using this internship to build a stronger foundation in C++ through practical, hands-on projects rather than just theory. More tasks will be added here as the internship progresses.
